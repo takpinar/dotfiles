@@ -1,5 +1,25 @@
 [pull]
-rebase = False
+	rebase = False
+
+[color]
+	ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yello
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
+
 [user]
 	email = theo.akpinar@gmail.com
 	name = takpinar
