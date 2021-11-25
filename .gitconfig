@@ -1,0 +1,8 @@
+[pull]
+rebase = False
+[user]
+	email = theo.akpinar@gmail.com
+	name = takpinar
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
