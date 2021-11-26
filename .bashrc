@@ -27,7 +27,7 @@ alias pythom3='python3'
 alias ip='ip -color=auto'
 alias ccv='ssh -X takpinar@ssh.ccv.brown.edu'
 alias fetch='neofetch'
-
+alias vi='nvim'
 
 ##__PATH__##
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/integration/nsight-compute:/opt/cuda/integration/nsight-systems:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"

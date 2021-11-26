@@ -5,6 +5,10 @@
 	ui = true
 
 [color "branch"]
+    branch     = auto
+    diff       = auto
+    status     = auto
+    showbranch = auto 	
     current = yellow reverse
     local = yello
     remote = green
@@ -18,7 +22,7 @@
 [color "status"]
     added = yellow
     changed = green
-    untracked = red
+    untracked = cyan
 
 [user]
 	email = theo.akpinar@gmail.com
