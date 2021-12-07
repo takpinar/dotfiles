@@ -10,7 +10,8 @@ eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircol
 
 #__Bash Prompt__#
 #Default Prompt: PS1='[\u@\h \W]\$ '
-PS1='\e[1;35m\u\e[0m@\e[0;34m\h\e[0m: \e[0;33m\w\e[0m $ '
+#PS1='\[1;35m\u\e[0m@\e[0;34m\h\e[0m: \e[0;33m\w\e[0m $ '
+PS1="\[\e[35m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\] \[\e[31m\]\w\[\e[m\] \\$ "
 PS2='> '
 
 ##__CUSTOM ALIASES__##
@@ -28,6 +29,7 @@ alias ip='ip -color=auto'
 alias ccv='ssh -X takpinar@ssh.ccv.brown.edu'
 alias fetch='neofetch'
 alias vi='nvim'
+alias moo='fortune | cowsay'
 
 ##__PATH__##
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/integration/nsight-compute:/opt/cuda/integration/nsight-systems:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
