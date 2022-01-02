@@ -5,8 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
-
+#eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
+[ -e ~/.dircolors ] && eval $(dircolors -b ~/.dircolors) || eval $(dircolors -b)
 
 #__Bash Prompt__#
 #Default Prompt: PS1='[\u@\h \W]\$ '
@@ -15,7 +15,7 @@ PS1="\[\e[35m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\] \[\e[31m\]\w\[\e[m\] \\$ "
 PS2='> '
 
 ##__CUSTOM ALIASES__##
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias v="/opt/visual-studio-code/bin/code"
 alias ll="ls -alF"
 alias hnn="bash /home/takpinar/desktop/joneslab/hnn-1.3.2/hnn &"
@@ -38,23 +38,6 @@ export PATH="/home/takpinar/desktop/joneslab/hnn-1.3.2:$PATH"
 
 export PATH="/home/takpinar/scripts:$PATH"
 export PATH="~/.local/bin:$PATH"
-# export PYTHONPATH=''. pytest''
-
-
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/takpinar/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/home/takpinar/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/home/takpinar/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/home/takpinar/anaconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# # <<< conda initialize <<<
 
 
 
