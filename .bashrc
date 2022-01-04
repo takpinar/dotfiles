@@ -5,8 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
-[ -e ~/.dircolors ] && eval $(dircolors -b ~/.dircolors) || eval $(dircolors -b)
+
+eval "`dircolors -b ~/.dircolors`"
 
 #__Bash Prompt__#
 #Default Prompt: PS1='[\u@\h \W]\$ '
@@ -15,7 +15,7 @@ PS1="\[\e[35m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\] \[\e[31m\]\w\[\e[m\] \\$ "
 PS2='> '
 
 ##__CUSTOM ALIASES__##
-#alias ls='ls --color=auto'
+alias ls='ls --color=auto'
 alias v="/opt/visual-studio-code/bin/code"
 alias ll="ls -alF"
 alias hnn="bash /home/takpinar/desktop/joneslab/hnn-1.3.2/hnn &"
