@@ -30,13 +30,14 @@ alias ccv='ssh -X takpinar@ssh.ccv.brown.edu'
 alias fetch='neofetch'
 alias vi='nvim'
 alias moo='fortune | cowsay'
+alias brownvpn='chrome http://vpn.brown.edu'
 
 ##__PATH__##
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/integration/nsight-compute:/opt/cuda/integration/nsight-systems:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
 export PATH="/home/takpinar/desktop/joneslab/hnn-1.3.2:$PATH"
 
-export PATH="/home/takpinar/scripts:$PATH"
+export PATH="/home/takpinar/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 
 
