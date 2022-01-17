@@ -40,5 +40,5 @@ export PATH="/home/takpinar/desktop/joneslab/hnn-1.3.2:$PATH"
 export PATH="/home/takpinar/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 
-
+export PYTHONPATH='/home/takpinar/NEURON/nrn/build/install/lib/python:'
 
