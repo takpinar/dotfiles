@@ -1,8 +1,8 @@
 " Turn syntax highlighting on.
 syntax on
 
-" Set colorscheme (found in /usr/share/nvim/runtime/colors
-colorscheme default 
+" Set colorscheme - found in /usr/share/nvim/runtime/colors
+colorscheme slate 
 
 " Set line numbers on
 set number
