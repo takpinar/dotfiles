@@ -20,9 +20,9 @@
     new = green bold
 
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+    added = cyan
+    changed = yellow
+    untracked = red
 
 [user]
 	email = theo.akpinar@gmail.com
@@ -32,3 +32,8 @@
 	helper = !/usr/bin/gh auth git-credential
 [init]
 	defaultBranch = master
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
